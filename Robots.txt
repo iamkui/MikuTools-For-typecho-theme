@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /config.inc.php
+Disallow: /var/
+Disallow: /install/
+Disallow: /install.php
