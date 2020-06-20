@@ -105,7 +105,7 @@
             <a class="index404" rel="nofollow" href="<?php $this->options->siteUrl(); ?>">返回首页</a>
         </section>
         <footer id="footer404">
-            &copy; <?php echo date('Y'); ?> <?php $this->options->title(); ?>.</span>
+            &copy; 2018-<?php echo date('Y'); ?> <?php $this->options->title(); ?>.</span>
         </footer>
     </div>
 </div>

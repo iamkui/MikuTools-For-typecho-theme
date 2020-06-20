@@ -4,15 +4,15 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
     $Weibo = new Typecho_Widget_Helper_Form_Element_Text('Weibo', NULL, NULL, _t('站长微博地址'), _t('输入你的底部微博图标地址'));
     $form->addInput($Weibo);
-
-    // $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock',
+    
+    // $sidebarBlock = new Typecho_Widget_Helper_Form_Element_Checkbox('sidebarBlock', 
     // array('ShowRecentPosts' => _t('显示最新文章'),
     // 'ShowRecentComments' => _t('显示最近回复'),
     // 'ShowCategory' => _t('显示分类'),
     // 'ShowArchive' => _t('显示归档'),
     // 'ShowOther' => _t('显示其它杂项')),
     // array('ShowRecentPosts', 'ShowRecentComments', 'ShowCategory', 'ShowArchive', 'ShowOther'), _t('侧边栏显示'));
-
+    
     // $form->addInput($sidebarBlock->multiMode());
     /*<?php $this->options->socialqq(); ?> 调用方法*/
 
@@ -37,13 +37,13 @@ function themeConfig($form) {
     //备案号
     $BlogBa = new Typecho_Widget_Helper_Form_Element_Text('BlogBa', NULL, NULL, _t('备案号'), _t('输入网站备案号'));
     $form->addInput($BlogBa);
-    //QQ收款码
+	//QQ收款码
     $Payqq = new Typecho_Widget_Helper_Form_Element_Text('Payqq', NULL, NULL, _t('QQ收款码'), _t('输入QQ收款码的图片URL'));
     $form->addInput($Payqq);
-    //微信收款码
+	//微信收款码
     $Paywx = new Typecho_Widget_Helper_Form_Element_Text('Paywx', NULL, NULL, _t('微信收款码'), _t('输入微信收款码的图片URL'));
     $form->addInput($Paywx);
-    //支付宝收款码
+	//支付宝收款码
     $Payali = new Typecho_Widget_Helper_Form_Element_Text('Payali', NULL, NULL, _t('支付宝收款码'), _t('输入支付宝收款码的图片URL'));
     $form->addInput($Payali);
 }

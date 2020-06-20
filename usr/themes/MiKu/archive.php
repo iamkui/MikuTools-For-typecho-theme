@@ -14,13 +14,17 @@
             <?php endif; ?>
 
 <fieldset class="nya-container">
-          <legend class="nya-title">
-            <i class="fa fa-search"></i>
-            <span>搜索结果</span>
-          </legend>
-                  <?php while ($this->next()): ?><a href="<?php $this->test_url(); ?>" target="_blank" rel="nofollow" class="nya-btn" title="<?php $this->title(); ?>">
+					<legend class="nya-title">
+						<i class="fa fa-search"></i>
+						<span>搜索结果</span>
+					</legend>
+                <?php if ($this->have()): ?>
+                  <?php while ($this->next()): ?><a href="<?php $this->tool_url(); ?>" target="_blank" rel="nofollow" class="nya-btn" title="<?php $this->title(); ?>">
                            <?php $this->title(); ?>
-</a><?php endwhile; ?>
+                    </a><?php endwhile; ?>
+                <?php else :?>
+                    <p>很遗憾，未找到与关键词相关的内容，可能是本站还没有这方面的内容或是您输入的关键词不够准确，您可以尝试使用新的关键词重新搜索</p>
+                <?php endif;?>
 </fieldset>
 
           <div class="text-center">
